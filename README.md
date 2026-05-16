@@ -10,14 +10,8 @@ A production-quality ETL pipeline that processes student marks from CSV files an
 
 ## Architecture
 
-```
-┌─────────────────┐     ┌─────────────┐     ┌──────────────┐     ┌────────────┐
-│  CSV Input      │────▶│  Extract    │────▶│  Transform   │────▶│  Load      │
-│  data/input/   │     │  data/temp/ │     │  data/processed/│   │  PostgreSQL │
-└─────────────────┘     └─────────────┘     └──────────────┘     └────────────┘
-                                                                       
-                         Airflow Orchestration (DAG)
-```
+<img width="659" height="92" alt="image" src="https://github.com/user-attachments/assets/8767eb36-8016-4a6c-828b-574b3f2aa3a8" />
+
 
 **Components:**
 - **CSV Input**: Source files in `data/input/`
